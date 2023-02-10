@@ -10,12 +10,34 @@
   grid-template-rows: repeat(5, 1fr);
   gap: 5px;
 }
+
+body {
+  background-color: black;
+}
+
 .block{
-  background: blue;
-  filter: blur(2%) drop-shadow(5% 5% yellow);
+  border-radius: 10%;
+  background-color: blue;
+  border: white 10%;
+  filter: drop-shadow(4mm 4mm 0mm pink);
+  transition: background-color 600ms ease-in-out;
+  animation: changebg 3s infinite;
+}
+
+.block:hover {
+  background-color: aqua;
+}
+
+@keyframes changebg{
+  0%{
+    rotate: 0deg;
+  }
+  100%{
+    rotate: 60deg;
+  }
+}
 
 /*  border-radius: 50% 0 0 0;*/
 /*  transform: skew(10deg);*/
 /*  mix-blend-mode: multiply; */
 /*  filter: drop-shadow(15px 15px yellow);*/
-}

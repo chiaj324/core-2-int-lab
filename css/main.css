@@ -17,6 +17,7 @@ html {
   line-height: 1.4;
 }
 
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -65,6 +66,11 @@ video {
   vertical-align: middle;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /*
  * Remove default fieldset styles.
  */
@@ -86,7 +92,64 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+main {
+  background: #fff;
+  width: 50vw;
+  margin: 0 auto;
+}
 
+article {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: minmax(300px, max-content);
+  gap: 1rem;
+}
+
+section {
+  background: #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+nav ul {
+  display: flex;
+  background-color: #222;
+  padding: 1rem;
+}
+
+nav li {
+  flex: auto;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #f5f5f5;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 200px;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #f5f5f5;
+  border: 1px solid #999;
+}
+
+.box>*:first-child {
+  align-self: stretch;
+}
+
+.box .selected {
+  align-self: center;
+}
+
+.flex-item {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: yellow;
+  border: 1px solid #999;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

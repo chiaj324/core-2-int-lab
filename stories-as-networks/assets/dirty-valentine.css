@@ -1,0 +1,54 @@
+body {
+	font-family: Courier New, sans-serif;
+}
+
+.title {
+	font-weight: normal;
+	font-size: 3vw;
+	padding-left: 1vw;
+	padding-bottom: 5%;
+}
+
+.opening {
+    margin: auto;
+    padding: 5%;
+    font-size: 400%;
+    width: 70%;
+    text-align: center;
+}
+
+.next {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 150px;
+    height: 1.5px;
+    background-color: #000;
+}
+
+.reveal {
+    display: none;
+}
+
+.opening:hover + .reveal {
+    display: block;
+    text-align: center;
+}
+
+.placement {
+    margin: auto;
+    width: 65%;
+    padding: 5%;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr 1.5fr;
+    grid-template-rows: minmax(max-content);
+    gap: 2rem;
+}
+
+.planet {
+    font-size: 600%;
+    padding: 0;
+}

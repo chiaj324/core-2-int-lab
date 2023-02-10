@@ -1,0 +1,28 @@
+body {
+	font-family: Courier New, sans-serif;
+}
+
+.title {
+	font-weight: normal;
+	font-size: 3vw;
+	padding-left: 1vw;
+	padding-bottom: 5%;
+}
+
+main {
+	background: #fff;
+	width: 60vw;
+	margin: 0 auto;
+}
+
+.parent {
+	display: grid;
+	grid-template-columns: 3fr 4fr;
+	grid-template-rows: minmax(max-content);
+	gap: 2rem;
+}
+
+.tellme {
+	text-align: right;
+}
+

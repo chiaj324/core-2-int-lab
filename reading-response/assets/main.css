@@ -1,0 +1,62 @@
+/* reset */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* type */
+
+body {
+    font-family: helvetica, sans-serif;
+    text-align: center;
+    background-color: #F6F6F2;
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+h1 {
+    letter-spacing: -.4vw;
+}
+/* structure */
+.spacer{
+  height: 100vh;
+  border: 2px solid red;
+}
+
+section{
+  height: 50vh;
+  
+  margin: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: steelblue;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  font-size: 2vw;
+}
+
+nav {
+  padding-bottom: 3vw;
+  letter-spacing: -.2vw;
+  font-size: 38px;
+  line-height: 1.2;
+}
+
+p {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  font-size: 60%;
+}
+
+h2 {
+  letter-spacing: -.2vw;
+}
+
+h3 {
+  letter-spacing: -.2vw;
+}
+

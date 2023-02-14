@@ -13,6 +13,7 @@ main {
     background: #fff;
 	width: 100%;
 	margin: 0 auto;
+	margin-top: -2vw;
 }
 
 .columns {

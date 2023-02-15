@@ -27,7 +27,6 @@ main {
 }
 
 
-.names:hover {
-	font-weight: bold;
+.names {
 	color: red;
 }

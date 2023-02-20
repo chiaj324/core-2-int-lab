@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Hide Hover demo</title>
+    <style>
+        body{
+            font-size: 2rem;
+        }
+        h3{
+            background: yellow;
+            font-size: 5rem;
+        }
+        .b{
+            display: none;
+        }
+        h3:hover{
+            background: blue;
+        }
+        h3:hover .b{
+            display: inline;
+        }
+        h3:hover .a{
+            display: none;
+        }
+
+        /*JS demos*/
+        #trigger{
+            font-weight: bold;
+        }
+        #trigger:hover{
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        .target{
+            display: none;
+        }
+        .effect{
+           display: block; 
+           /* this class overrides the "display:none"
+           when added onto the .target element */
+        }
+
+    </style>
+    <link rel="stylesheet" href="show-hide.js">
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+
+<h2>Show Hide with Hover</h2>
+<p>
+In this scenario, both the trigger and the target need to share the same container.
+</p>
+<h3>
+    <span class="a"> A </span>
+    <span class="b"> B </span>
+</h3>
+
+<h2>Show Hide with JS</h2>
+<p>
+In order to interact with one element, and target a completely different element with some kind of effect, you need to use JavaScript. I recommend the technique to add / remove a class on the target element to control its behavior — whether to show/hide through changing its display behavior, or change its styles.
+</p>
+<div id="trigger">Click Me</div>
+<div class="target">Effect</div>
+
+<script src="show-hide.js"></script>
+</body>
+</html>

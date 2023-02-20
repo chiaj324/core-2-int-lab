@@ -26,34 +26,33 @@ main {
 
 .parent {
 	display: grid;
-	grid-template-columns: 3fr 4fr;
+	grid-template-columns: 1fr 4fr;
 	grid-template-rows: minmax(max-content);
-	gap: 2rem;
+	gap: 4rem;
 }
 
-.tellme {
-	text-align: right;
+.number {
+    text-align: right;
 }
 
-#trigger:hover {
-    opacity: 0.5;
-    cursor: pointer;
+.right {
+    display: block;
+    text-align: right;
 }
 
-.target {
+.next {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    font-size: 4rem
+}
+
+.secret span {
     visibility: hidden;
 }
 
-.target2 {
-    visibility: hidden;
-}
-
-.target3 {
-    visibility: hidden;
-}
-
-
-.effect {
+.secret:hover span {
     visibility: visible;
 }
+
 

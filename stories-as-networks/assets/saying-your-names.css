@@ -9,14 +9,28 @@ body {
 	padding-bottom: 5%;
 }
 
-main { 	
-    background: #fff;
-	width: 100%;
-	margin: 0 auto;
-	margin-top: 0vw;
+a {
+    text-decoration: none;
+    color: initial;
 }
 
-.columns {
+.title:hover {
+    opacity: 0.5;
+}
+
+main { 	
+    background: #fff;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	margin: 0 auto;
+	margin-top: 0vw;
+	font-size: 14px;
+	text-align: justify;
+	text-justify: inter-word;
+	columns: 10;
+}
+
+.saying-your-names-columns {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: minmax(max-content);

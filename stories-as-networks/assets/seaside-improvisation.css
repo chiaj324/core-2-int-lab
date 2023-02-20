@@ -1,0 +1,82 @@
+body {
+	font-family: Courier New, sans-serif;
+}
+
+.title {
+	font-weight: normal;
+	font-size: 3vw;
+	padding-left: 1vw;
+	padding-bottom: 5%;
+}
+
+.title:hover {
+    opacity: 0.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+	background: #fff;
+	width: 50vw;
+	margin: 0 auto;
+}
+
+.first {
+    text-align: left;
+}
+
+.second {
+    text-align: right;
+}
+
+.firsteffect {
+    text-align: right;
+}
+
+.secondeffect {
+    text-align: left;
+}
+
+.wrong {
+    text-align: center;
+}
+
+.wrong:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+.painted:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.paintedwindows {
+    background-color: black;
+}
+
+.right {
+    display: block;
+    text-align: right;
+}
+
+.alljoy {
+    letter-spacing: -4px;
+    visibility: hidden;
+}
+
+.joyshown {
+    visibility: visible;
+}
+
+.joy:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.bottom {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}

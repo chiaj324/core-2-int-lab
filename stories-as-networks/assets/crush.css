@@ -10,13 +10,34 @@ body {
 }
 
 a {
-    text-decoration: none;
-    color: initial;
+	text-decoration: none;
+	color: inherit;
 }
 
-.title:hover {
-    opacity: 0.5;
+SCHEZERADE
+
+.schezerade-body {
+	background: #fff;
+	width: 60vw;
+	margin: 0 auto;
 }
+
+.schezerade-columns {
+	display: grid;
+	grid-template-columns: 3fr 4fr;
+	grid-template-rows: minmax(max-content);
+	gap: 2rem;
+}
+
+.tellme {
+	text-align: right;
+}
+
+.telling {
+    margin-right: 30%;
+}
+
+DIRTY VALENTINE
 
 .opening {
     margin: auto;
@@ -60,4 +81,19 @@ a {
 .planet {
     font-size: 600%;
     padding: 0;
+}
+
+SAYING YOUR NAMES
+
+.saying-your-names-body { 	
+    display: block;
+    column-count: 4;
+    column-width: 20%;
+    -webkit-column-count: 4;
+    -webkit-column-width: 20%;
+}
+
+
+.names {
+	color: red;
 }

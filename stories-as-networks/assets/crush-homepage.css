@@ -1,3 +1,40 @@
-li {
-    list-style-type: none;
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+}
+
+.header {
+    text-align: center;
+    padding-top: 8%;
+}
+
+main {
+    padding-top: 8%;
+    width: 60vw;
+	margin: 0 auto;
+    text-align: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: white;
+}
+
+.left {
+    text-align: right;
+    font-style: italic;
+}
+
+
+.effect {
+    background-color: black;
+}
+
+.undo {
+    background-color: white;
 }

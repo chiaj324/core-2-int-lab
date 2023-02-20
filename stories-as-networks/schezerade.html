@@ -5,19 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Schezerade</title>
 	<link rel="stylesheet" type="text/css" href="assets/schezerade.css">
-	<script src="assets/schezerade.js"></script>
+
 </head>
-<body>
+<body class="background">
 	<h1 class="title"><a href="crush-homepage.html">SCHEZERADE</a></h1>
 
 	<main>
 		<div class="parent">
 			<section class="tellme" class="child">
 				<p>
-					Tell me about the dream where we &xrarr;
+					Tell me about the dream where we <span id="trigger"> &xrarr; </span>
 				</p>
 			</section>
-			<section class="child">
+			<section class="child" class="telling"><span class="target">
 				<p>
 					pull the bodies out of the lake and dress them in warm clothes again.
 					<br>
@@ -30,39 +30,41 @@
 					<br>
 					Look at the light through the windowpane. That means it’s noon, that means we’re inconsolable.
 				</p>
+			</span>
+			</section>
+		</div>
+	</main>
+	<main>
+		<div class="parent">
+			<section class="tellme" class="child">
+				<p>
+					Tell me how  <span id="trigger2"> &xrarr; </span>
+				</p>
+			</section>
+			<section class="telling" class="child"><span class="target2">
+				<p>
+					all this, and love too, will ruin us. These, our bodies possessed by life.
+				</p>
+			</span>
 			</section>
 		</div>
 	</main>
 
 	<main>
 		<div class="parent">
-			<div class="tellme" class="child">
+			<section class="tellme" class="child">
 				<p>
-					Tell me how &xrarr;
+					Tell me we'll <span id="trigger3"> &xrarr; </span>
 				</p>
-			</div>
-			<div class="telling" class="child">
-				<p>
-					all this, and love too, will ruin us. These, our bodies possessed by life.
-				</p>
-			</div>
-		</div>
-	</main>
-
-	<main>
-		<div class="parent">
-			<div class="tellme" class="child">
-				<p>
-					Tell me we'll &xrarr;
-				</p>
-			</div>
-			<div class="telling" class="child">
+			</section>
+			<section class="telling" class="child"><span class="target3">
 				<p>
 					never get used to it.
 				</p>
-			</div>
+			</span>
+			</section>
 		</div>
 	</main>
-	
+<script src="assets/schezerade.js"></script>
 </body>
 </html>

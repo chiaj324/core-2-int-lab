@@ -53,6 +53,7 @@ main {
 
 .secret:hover span {
     visibility: visible;
+    cursor: pointer;
 }
 
 

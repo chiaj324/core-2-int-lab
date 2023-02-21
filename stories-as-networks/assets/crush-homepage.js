@@ -1,15 +1,37 @@
-let trigger1 = document.getElementById('trigger1'); //get element by id attribute
-let trigger2 = document.getElementById('trigger2');
+let schezerade = document.getElementById('schezerade'); //get element by id attribute
+let seasideimprovisation = document.getElementById('seasideimprovisation');
+let thetornuproad = document.getElementById('thetornuproad');
+let sayingyournames = document.getElementById('sayingyournames');
+let planetoflove = document.getElementById('planetoflove');
 let body = document.querySelector('body'); //get element by CSS seelector
-trigger1.addEventListener('mouseleave', function(){
+
+schezerade.addEventListener('mouseleave', function(){
     body.classList.toggle('undo')
 })
-trigger1.addEventListener('mouseover', function(){
+schezerade.addEventListener('mouseover', function(){
     body.classList.toggle('effect');
 })
-trigger2.addEventListener('mouseleave', function(){
+seasideimprovisation.addEventListener('mouseleave', function(){
     body.classList.toggle('undo')
 })
-trigger2.addEventListener('mouseover', function(){
+seasideimprovisation.addEventListener('mouseover', function(){
+    body.classList.toggle('effect');
+})
+thetornuproad.addEventListener('mouseleave', function(){
+    body.classList.toggle('undo')
+})
+thetornuproad.addEventListener('mouseover', function(){
+    body.classList.toggle('effect');
+})
+sayingyournames.addEventListener('mouseleave', function(){
+    body.classList.toggle('undo')
+})
+sayingyournames.addEventListener('mouseover', function(){
+    body.classList.toggle('effect');
+})
+planetoflove.addEventListener('mouseleave', function(){
+    body.classList.toggle('undo')
+})
+planetoflove.addEventListener('mouseover', function(){
     body.classList.toggle('effect');
 })

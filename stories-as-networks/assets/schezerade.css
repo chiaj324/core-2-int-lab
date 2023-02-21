@@ -40,6 +40,16 @@ main {
     cursor: pointer;
 }
 
+#trigger2:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#trigger3:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 .target {
     visibility: hidden;
 }

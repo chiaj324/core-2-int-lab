@@ -1,0 +1,19 @@
+.smiley {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+}
+
+.outline {
+    background-color: black;
+}
+
+.blue {
+    background-color: aqua;
+}
+
+.yellow {
+    background-color: yellow;
+}

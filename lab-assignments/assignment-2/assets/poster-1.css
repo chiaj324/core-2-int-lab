@@ -1,0 +1,46 @@
+body {
+    background-size: 60%;
+    background-image: url('social-network-image.jpeg');
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ededed;
+    text-align: center;
+    width: 50vw;
+	margin: 0 auto;
+    letter-spacing: 0.75vw;
+}
+
+.line-1 {
+    padding-top: 3vw;
+    font-size: 575%;
+}
+
+.line-2 {
+    font-size: 900%;
+}
+
+.line-3 {
+    font-style: italic;
+    font-size: 500%;
+}
+
+.line-4 {
+    font-size: 750%;
+}
+
+.line-5 {
+    font-size: 300%;
+    font-style: italic;
+}
+
+.line-6 {
+    font-size: 1050%;
+}
+
+.line-7 {
+    font-size: 750%;
+}

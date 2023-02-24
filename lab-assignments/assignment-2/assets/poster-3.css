@@ -1,0 +1,32 @@
+body {
+    background-image: url('tumblr_c28b30a24ec1bb8a2970bb0b7a13ccf1_50311838_1280.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 40%;
+}
+
+main {
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-family: "century-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title {
+    padding-top: 10%;
+    font-size: 600%;
+    letter-spacing: 20px;
+    line-height: 150%;
+}
+
+.cast {
+    padding-top: 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(300px, max-content);
+    gap: 1rem;
+}

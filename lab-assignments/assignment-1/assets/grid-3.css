@@ -1,0 +1,15 @@
+main {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+}
+
+.outline {
+    background-color: black;
+}
+
+.yellow {
+    background-color: yellow;
+}

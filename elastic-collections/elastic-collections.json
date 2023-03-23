@@ -1,252 +1,252 @@
 [
   {
-    "title": "CODA",
-    "year": 2021,
-    "director": "Sian Heder",
-    "budget": "$10 million",
-    "boxoffice": "$2 million",
-    "rottentomatoes": "94%",
-    "image": "2021.jpg",
-    "class": 10
-  },
-  {
-    "title": "Nomadland",
-    "year": 2020,
-    "director": "Chloe Zhao",
-    "budget": "$5 million",
-    "boxoffice": "$39.5 million",
-    "rottentomatoes": "93%",
-    "image": "2020.jpg",
-    "class": 50
-  },
-  {
-    "title": "Parasite",
-    "year": 2019,
-    "director": "Bong Joon Ho",
-    "budget": "$15.5 million",
-    "boxoffice": "$263.1 million",
-    "rottentomatoes": "99%",
-    "image": "2019.jpg",
-    "class": 300
-  },
-  {
-    "title": "Green Book",
-    "year": 2018,
-    "director": "Peter Farrelly",
-    "budget": "$23 million",
-    "boxoffice": "$321.8 million",
-    "rottentomatoes": "77%",
-    "image": "2018.jpg",
-    "class": 400
-  },
-  {
-    "title": "The Shape of Water",
-    "year": 2017,
-    "director": "Guillermo del Toro",
-    "budget": "$19.5 million",
-    "boxoffice": "$195.3 million",
-    "rottentomatoes": "92%",
-    "image": "2017.jpg",
-    "class": 200
-  },
-  {
-    "title": "Moonlight",
-    "year": 2016,
-    "director": "Barry Jenkins",
-    "budget": "$1.5 million",
-    "boxoffice": "$65.3 million",
-    "rottentomatoes": "98%",
-    "image": "2016.jpg",
-    "class": 100
-  },
-  {
-    "title": "Spotlight",
-    "year": 2015,
-    "director": "Tom McCarthy",
-    "budget": "$20 million",
-    "boxoffice": "$98.7 million",
-    "rottentomatoes": "97%",
-    "image": "2015.jpg",
-    "class": 100
-  },
-  {
-    "title": "Birdman",
-    "year": 2014,
-    "director": "Alejandro González Iñárritu",
-    "budget": "$16.5 million",
-    "boxoffice": "$103.2 million",
-    "rottentomatoes": "91%",
-    "image": "2014.jpg",
-    "class": 200
-  },
-  {
-    "title": "12 Years a Slave",
-    "year": 2013,
-    "director": "Steve McQueen",
-    "budget": "$20 million",
-    "boxoffice": "$187.7 million",
-    "rottentomatoes": "95%",
-    "image": "2013.jpg",
-    "class": 200
-  },
-  {
-    "title": "Argo",
-    "year": 2012,
-    "director": "Ben Affleck",
-    "budget": "$44.5 million",
-    "boxoffice": "$232.3 million",
-    "rottentomatoes": "96%",
-    "image": "2012.jpg",
-    "class": 300
-  },
-  {
-    "title": "The Artist",
-    "year": 2011,
-    "director": "Michel Hazanavicius",
-    "budget": "$15 million",
-    "boxoffice": "$133.4 million",
-    "rottentomatoes": "95%",
-    "image": "2011.jpg",
-    "class": 200
-  },
-  {
-    "title": "The King's Speech",
-    "year": 2010,
-    "director": "Tom Hooper",
-    "budget": "$15 million",
-    "boxoffice": "$427.4 million",
-    "rottentomatoes": "94%",
-    "image": "2010.jpg",
-    "class": 500
-  },
-  {
-    "title": "The Hurt Locker",
-    "year": 2009,
-    "director": "Kathryn Bigelow",
-    "budget": "$15 million",
-    "boxoffice": "$49.2 million",
-    "rottentomatoes": "97%",
-    "image": "2009.jpg",
-    "class": 50
-  },
-  {
-    "title": "Slumdog Millionaire",
-    "year": 2008,
-    "director": "Danny Boyle",
-    "budget": "$15 million",
-    "boxoffice": "$378.1 million",
-    "rottentomatoes": "91%",
-    "image": "2008.jpg",
-    "class": 400
-  },
-  {
-    "title": "No Country for Old Men",
-    "year": 2007,
-    "director": "Joel Cohen, Ethan Cohen",
-    "budget": "$25 million",
-    "boxoffice": "$171.6 million",
-    "rottentomatoes": "93%",
-    "image": "2007.jpg",
-    "class": 200
-  },
-  {
-    "title": "The Departed",
-    "year": 2006,
-    "director": "Martin Scorsese",
-    "budget": "$90 million",
-    "boxoffice": "$291.5 million",
-    "rottentomatoes": "91%",
-    "image": "2006.jpg",
-    "class": 300
-  },
-  {
-    "title": "Crash",
-    "year": 2005,
-    "director": "Paul Haggis",
-    "budget": "$6.5 million",
-    "boxoffice": "$98.4 million",
-    "rottentomatoes": "74%",
-    "image": "2005.jpg",
-    "class": 100
-  },
-  {
-    "title": "Million Dollar Baby",
-    "year": 2004,
-    "director": "Clint Eastwood",
-    "budget": "$30 million",
-    "boxoffice": "$216.8 million",
-    "rottentomatoes": "90%",
-    "image": "2004.jpg",
-    "class": 300
-  },
-  {
-    "title": "The Lord of the Rings: The Return of the King",
-    "year": 2003,
-    "director": "Peter Jackson",
-    "budget": "$94 million",
-    "boxoffice": "$1.146 billion",
-    "rottentomatoes": "93%",
-    "image": "2003.jpg",
-    "class": 1000
-  },
-  {
-    "title": "Chicago",
-    "year": 2002,
-    "director": "Rob Marshall",
-    "budget": "$45 million",
-    "boxoffice": "$306.8 million",
-    "rottentomatoes": "86%",
-    "image": "2002.jpg",
-    "class": 400
-  },
-  {
-    "title": "A Beautiful Mind",
-    "year": 2001,
-    "director": "Ron Howard",
-    "budget": "$58 million",
-    "boxoffice": "$316.8 million",
-    "rottentomatoes": "74%",
-    "image": "2001.jpg",
-    "class": 400
-  },
-  {
-    "title": "Gladiator",
-    "year": 2000,
-    "director": "Ridley Scott",
-    "budget": "$103 million",
-    "boxoffice": "$460.6 million",
-    "rottentomatoes": "79%",
-    "image": "2000.jpg",
-    "class": 500
-  },
-  {
-    "title": "American Beauty",
-    "year": 1999,
-    "director": "Sam Mendes",
-    "budget": "$15 million",
-    "boxoffice": "$365.3 million",
-    "rottentomatoes": "87%",
-    "image": "1999.jpg",
-    "class": 400
-  },
-  {
-    "title": "Shakespeare in Love",
-    "year": 1998,
-    "director": "John Madden",
-    "budget": "$25 million",
-    "boxoffice": "$289.3 million",
-    "rottentomatoes": "92%",
-    "image": "1998.jpg",
-    "class": 300
-  },
-  {
-    "title": "Titanic",
+    "image": "1997.jpg",
     "year": 1997,
+    "title": "Titanic",
     "director": "James Cameron",
     "budget": "$200 million",
     "boxoffice": "$2.249 billion",
     "rottentomatoes": "88%",
-    "image": "1997.jpg",
     "class": 2000
+  },
+  {
+    "image": "1998.jpg",
+    "year": 1998,
+    "title": "Shakespeare in Love",
+    "director": "John Madden",
+    "budget": "$25 million",
+    "boxoffice": "$289.3 million",
+    "rottentomatoes": "92%",
+    "class": 300
+  },
+  {
+    "image": "1999.jpg",
+    "year": 1999,
+    "title": "American Beauty",
+    "director": "Sam Mendes",
+    "budget": "$15 million",
+    "boxoffice": "$365.3 million",
+    "rottentomatoes": "87%",
+    "class": 400
+  },
+  {
+    "image": "2000.jpg",
+    "year": 2000,
+    "title": "Gladiator",
+    "director": "Ridley Scott",
+    "budget": "$103 million",
+    "boxoffice": "$460.6 million",
+    "rottentomatoes": "79%",
+    "class": 500
+  },
+  {
+    "image": "2001.jpg",
+    "year": 2001,
+    "title": "A Beautiful Mind",
+    "director": "Ron Howard",
+    "budget": "$58 million",
+    "boxoffice": "$316.8 million",
+    "rottentomatoes": "74%",
+    "class": 400
+  },
+  {
+    "image": "2002.jpg",
+    "year": 2002,
+    "title": "Chicago",
+    "director": "Rob Marshall",
+    "budget": "$45 million",
+    "boxoffice": "$306.8 million",
+    "rottentomatoes": "86%",
+    "class": 400
+  },
+  {
+    "image": "2003.jpg",
+    "year": 2003,
+    "title": "The Lord of the Rings: The Return of the King",
+    "director": "Peter Jackson",
+    "budget": "$94 million",
+    "boxoffice": "$1.146 billion",
+    "rottentomatoes": "93%",
+    "class": 1000
+  },
+  {
+    "image": "2004.jpg",
+    "year": 2004,
+    "title": "Million Dollar Baby",
+    "director": "Clint Eastwood",
+    "budget": "$30 million",
+    "boxoffice": "$216.8 million",
+    "rottentomatoes": "90%",
+    "class": 300
+  },
+  {
+    "image": "2005.jpg",
+    "year": 2005,
+    "title": "Crash",
+    "director": "Paul Haggis",
+    "budget": "$6.5 million",
+    "boxoffice": "$98.4 million",
+    "rottentomatoes": "74%",
+    "class": 100
+  },
+  {
+    "image": "2006.jpg",
+    "year": 2006,
+    "title": "The Departed",
+    "director": "Martin Scorsese",
+    "budget": "$90 million",
+    "boxoffice": "$291.5 million",
+    "rottentomatoes": "91%",
+    "class": 300
+  },
+  {
+    "image": "2007.jpg",
+    "year": 2007,
+    "title": "No Country for Old Men",
+    "director": "Joel Cohen, Ethan Cohen",
+    "budget": "$25 million",
+    "boxoffice": "$171.6 million",
+    "rottentomatoes": "93%",
+    "class": 200
+  },
+  {
+    "image": "2008.jpg",
+    "year": 2008,
+    "title": "Slumdog Millionaire",
+    "director": "Danny Boyle",
+    "budget": "$15 million",
+    "boxoffice": "$378.1 million",
+    "rottentomatoes": "91%",
+    "class": 400
+  },
+  {
+    "image": "2009.jpg",
+    "year": 2009,
+    "title": "The Hurt Locker",
+    "director": "Kathryn Bigelow",
+    "budget": "$15 million",
+    "boxoffice": "$49.2 million",
+    "rottentomatoes": "97%",
+    "class": 50
+  },
+  {
+    "image": "2010.jpg",
+    "year": 2010,
+    "title": "The King's Speech",
+    "director": "Tom Hooper",
+    "budget": "$15 million",
+    "boxoffice": "$427.4 million",
+    "rottentomatoes": "94%",
+    "class": 500
+  },
+  {
+    "image": "2011.jpg",
+    "year": 2011,
+    "title": "The Artist",
+    "director": "Michel Hazanavicius",
+    "budget": "$15 million",
+    "boxoffice": "$133.4 million",
+    "rottentomatoes": "95%",
+    "class": 200
+  },
+  {
+    "image": "2012.jpg",
+    "year": 2012,
+    "title": "Argo",
+    "director": "Ben Affleck",
+    "budget": "$44.5 million",
+    "boxoffice": "$232.3 million",
+    "rottentomatoes": "96%",
+    "class": 300
+  },
+  {
+    "image": "2013.jpg",
+    "year": 2013,
+    "title": "12 Years a Slave",
+    "director": "Steve McQueen",
+    "budget": "$20 million",
+    "boxoffice": "$187.7 million",
+    "rottentomatoes": "95%",
+    "class": 200
+  },
+  {
+    "image": "2014.jpg",
+    "year": 2014,
+    "title": "Birdman",
+    "director": "Alejandro González Iñárritu",
+    "budget": "$16.5 million",
+    "boxoffice": "$103.2 million",
+    "rottentomatoes": "91%",
+    "class": 200
+  },
+  {
+    "image": "2015.jpg",
+    "year": 2015,
+    "title": "Spotlight",
+    "director": "Tom McCarthy",
+    "budget": "$20 million",
+    "boxoffice": "$98.7 million",
+    "rottentomatoes": "97%",
+    "class": 100
+  },
+  {
+    "image": "2016.jpg",
+    "year": 2016,
+    "title": "Moonlight",
+    "director": "Barry Jenkins",
+    "budget": "$1.5 million",
+    "boxoffice": "$65.3 million",
+    "rottentomatoes": "98%",
+    "class": 100
+  },
+  {
+    "image": "2017.jpg",
+    "year": 2017,
+    "title": "The Shape of Water",
+    "director": "Guillermo del Toro",
+    "budget": "$19.5 million",
+    "boxoffice": "$195.3 million",
+    "rottentomatoes": "92%",
+    "class": 200
+  },
+  {
+    "image": "2018.jpg",
+    "year": 2018,
+    "title": "Green Book",
+    "director": "Peter Farrelly",
+    "budget": "$23 million",
+    "boxoffice": "$321.8 million",
+    "rottentomatoes": "77%",
+    "class": 400
+  },
+  {
+    "image": "2019.jpg",
+    "year": 2019,
+    "title": "Parasite",
+    "director": "Bong Joon Ho",
+    "budget": "$15.5 million",
+    "boxoffice": "$263.1 million",
+    "rottentomatoes": "99%",
+    "class": 300
+  },
+  {
+    "image": "2020.jpg",
+    "year": 2020,
+    "title": "Nomadland",
+    "director": "Chloe Zhao",
+    "budget": "$5 million",
+    "boxoffice": "$39.5 million",
+    "rottentomatoes": "93%",
+    "class": 50
+  },
+  {
+    "image": "2021.jpg",
+    "year": 2021,
+    "title": "CODA",
+    "director": "Sian Heder",
+    "budget": "$10 million",
+    "boxoffice": "$2 million",
+    "rottentomatoes": "94%",
+    "class": 10
   }
 ]

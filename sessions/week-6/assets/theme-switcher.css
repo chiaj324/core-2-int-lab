@@ -171,7 +171,7 @@ textarea {
     color: #222;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    font-family: "Bitter", Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
   }
 
 
@@ -282,8 +282,7 @@ section {
 /* this is code example for typography */
 
 p {
-  font-family: new-order, sans-serif;
-  font-weight: 400;
+  font-family: 'Times New Roman', Times, serif;
   font-style: normal;
   font-size: var(--text-base-size);
   margin-bottom: 1.5rem;

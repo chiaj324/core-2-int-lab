@@ -16,15 +16,33 @@ fetch('elastic-collections.json')
       newItem.innerHTML = `
         <div class="image height-${item.class}"><img src="assets/imgs/${item.image}"></div>
         <div class="year">${item.year}</div>
-        <div class="title">${item.title}</div>
-        <div class="director">${item.director}</div>
-        <div class="budget">${item.budget}</div>
-        <div class="boxoffice">${item.boxoffice}</div>
-        <div class="rottentomatoes">${item.rottentomatoes}</div>`;
-      container.appendChild(newItem);    
+        <div class="details">
+          <div class="title">${item.title}</div>
+          <div class="director">${item.director}</div>
+          <div class="budget">${item.budget}</div>
+          <div class="boxoffice">${item.boxoffice}</div>
+          <div class="rottentomatoes">${item.rottentomatoes}</div>
+        </div>
+      `;
+      container.appendChild(newItem); 
+      newItem.addEventListener('click', function(){
+        let alreadyActive = document.querySelector('.active');
+        if( alreadyActive ){
+          alreadyActive.classList.remove('active');
+        }
+        newItem.classList.toggle("active");
+      });   
     });
-    container.appendChild(newItem); 
-    newItem.addEventListener('click', function(){
-      newItem.classList.toggle("active");
-    });   
+
+    // let newItem = document.createElement("div");
+    // newItem.innerHTML = `
+    // <div class="title">${item.title}</div>
+    // <div class="director">${item.director}</div>
+    // <div class="budget">${item.budget}</div>
+    // <div class="boxoffice">${item.boxoffice}</div>
+    // <div class="rottentomatoes">${item.rottentomatoes}</div>
+    // `;
+    // container.appendChild(newItem); 
+      
 }
+

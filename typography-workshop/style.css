@@ -1,0 +1,111 @@
+
+
+:root{
+  --GRAD: 0;
+  --wght: 400;
+  --pad: 4rem
+}
+
+body{
+  background-color: antiquewhite;
+  margin: 0;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    width: 600px;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+h2 {
+    margin-top: var(--pad);
+}
+
+h3 {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* h1 + p, h2 + p {
+    text-indent: 0;
+} */
+
+blockquote {
+    font-family: "tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+    /* margin-top: var(--pad); */
+    letter-spacing: 0.0em;
+    line-height: 1.2;
+    /* text-indent: -15px; */
+    font-size: 1.1rem;
+    margin: var(--pad);
+    text-align: justify;
+}
+
+p {
+    font-family: "tinos", serif;
+    font-weight: 400;
+    /* text-indent: 3rem; */
+    line-height: 1.4;
+    hyphens: auto;
+    font-feature-settings: "onum" on;
+}
+
+ul {
+    padding-left: 3rem;
+
+}
+
+ul li {
+    font-family: "tinos", serif;
+    font-weight: 400;  
+    list-style-type: none;
+    text-indent: -10px;
+
+}
+
+ul li:before {
+    content: "* ";
+}
+
+ul li:first-child {
+    margin-top: 1em;
+}
+
+sup {
+    font-feature-settings: "sups" on;
+    letter-spacing: -0.5px;
+    margin-right: 3px;
+}
+
+em {
+    font-family: "tinos", serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.cast {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+

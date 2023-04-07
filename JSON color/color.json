@@ -1,0 +1,27 @@
+[
+  {
+    "nameofcolor": "Berry Red",
+    "hexvalue": "#B8255F",
+    "red": "aaaa"
+  },
+  {
+    "nameofcolor": "Olive Green",
+    "hexvalue": "#AFB83B",
+    "olive":"aaaa"
+  },
+  {
+    "nameofcolor": "Mint Green",
+    "hexvalue": "#6ACCBC",
+    "mint":"aaaa"
+  },
+  {
+    "nameofcolor": "Grape",
+    "hexvalue": "#884DFF",
+    "grape":"aaaa"
+  },
+  {
+    "nameofcolor": "Lavender",
+    "hexvalue": "#EB96EB",
+    "lavendar":"aaaa"
+  }
+]

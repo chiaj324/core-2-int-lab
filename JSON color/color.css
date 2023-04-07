@@ -1,0 +1,36 @@
+#container {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-rows: minmax(max-content);
+    /* gap: 1rem; */
+
+}
+
+.red {
+    color: #B8255F;
+  }
+  
+  .red:hover {
+    color: #B8255F;
+  }
+  .nameofcolor{
+    white-space: nowrap;
+  }
+  .content {
+      width: 1000px;
+      height: 600px;
+      display: flex;
+    }
+
+ .content li {
+      text-align: center;
+      line-height: 600px;
+      list-style: none;
+      width: 200px;
+      height: 600px;
+    }
+
+  .content li:hover {
+      width: 800px;
+      transition: all 2s;
+    }

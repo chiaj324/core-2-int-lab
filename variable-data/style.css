@@ -1,0 +1,41 @@
+
+@font-face {
+    font-family: 'Pentameter';
+    font-style: -16deg 0deg;
+    font-weight: 100 700;
+    font-display: swap;
+    src: url('fonts/PentameterVF.woff2') format('woff2');
+   }
+   
+   body{
+       font-family: 'Pentameter', monospace;
+       display: flex;
+       align-items: center;
+       min-height: 100vh;
+   }
+   main{
+     text-transform: uppercase;
+       font-size: 3vw;
+       text-align: center;
+   }
+   
+   #temp, #feels{
+       display: inline;
+   }
+   
+   .highlight{
+     --wdth: 100;
+     --wght: 400;
+     --slnt: 0;
+     text-transform: lowercase;
+       font-size: 13vw;
+       line-height: .9;
+       letter-spacing: -0.08em;
+     font-variation-settings: 'wdth' var(--wdth), 'wght' var(--wght), 'slnt' var(--slnt);
+   }
+   
+   
+   
+   
+   
+   

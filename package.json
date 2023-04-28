@@ -13,5 +13,11 @@
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "@11ty/eleventy-fetch": "^4.0.0",
+    "axios": "^1.4.0",
+    "eleventy-plugin-error-overlay": "^1.0.0",
+    "html-minifier": "^4.0.0"
   }
 }

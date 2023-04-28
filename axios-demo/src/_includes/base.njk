@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{'/css/main.css' | url}}">
+</head>
+<body>
+    <main>
+    <header>
+        <h1>{{ title }}</h1>  
+    </header>
+        <article>
+    
+            {{ content | safe }}
+
+        <table>
+		<thead>
+			<tr>
+				<th>Year</th>
+				<th>Leading cause</th>
+				<th>Sex</th>
+				<th>Race / ethnicity</th>
+				<th>Deaths</th>
+			</tr>
+		</thead>
+		<tbody>
+    {% for nycdata2 in nycdata2 %}
+      <tr>
+				<td>{{ nycdata2.year }}</td>
+				<td>{{ nycdata2.leading_cause }}</td>
+				<td>{{ nycdata2.sex }}</td>
+				<td>{{ nycdata2.race_ethnicity }}</td>
+				<td>{{ nycdata2.deaths }}</td>
+			</tr>
+    {% endfor %}		
+    </tbody>
+	</table>
+
+
+    </article>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 11ty test</p>
+    </footer>
+
+</body>
+</html>

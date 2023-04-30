@@ -62,7 +62,20 @@ function displayData( data ){
     });
 }
 
-let categories = document.getElementById("categories")
+const result = container.group(({ incident_type_desc }) => incident_type_desc);
+
+// let categories = document.getElementById("categories")
+
+// categories = {};
+// for (var i = 0; i < data.length; i++) {
+//     var item = data[i];
+//     var incident = item.incident_type_desc;
+//     if (!(incident in categories)) categories[incident] = [];
+//     categories[incident].push(item);
+// }
+
+// console.log(categories)
+
 
 function getMinute(item){
     let duration = item.total_incident_duration;

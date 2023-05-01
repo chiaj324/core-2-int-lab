@@ -15,7 +15,7 @@ a {
 }
 
 .title:hover {
-    opacity: 0.5;
+    color: red;
 }
 
 main { 	

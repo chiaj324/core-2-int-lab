@@ -10,7 +10,7 @@ body {
 }
 
 .title:hover {
-    opacity: 0.5;
+    color: red;
 }
 
 a {
@@ -42,12 +42,18 @@ main {
 
 .wrong {
     text-align: center;
+    color: red;
 }
 
 .wrong:hover {
     cursor: pointer;
     opacity: 0.5;
 }
+
+.painted {
+    color: red;
+}
+
 .painted:hover {
     cursor: pointer;
     opacity: 0.5;
@@ -69,6 +75,10 @@ main {
 
 .joyshown {
     visibility: visible;
+}
+
+.joy {
+    color: red;
 }
 
 .joy:hover {

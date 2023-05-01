@@ -10,7 +10,7 @@ body {
 }
 
 .title:hover {
-    opacity: 0.5;
+    color: red;
 }
 
 a {
@@ -33,6 +33,10 @@ main {
 
 .tellme {
 	text-align: right;
+}
+
+#trigger, #trigger2, #trigger3 {
+    color: red;
 }
 
 #trigger:hover {

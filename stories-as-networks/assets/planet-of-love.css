@@ -11,7 +11,7 @@ body {
 }
 
 .title:hover {
-    opacity: 0.5;
+    color: red;
 }
 
 a {

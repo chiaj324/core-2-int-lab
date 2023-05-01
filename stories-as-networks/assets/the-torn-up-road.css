@@ -10,7 +10,7 @@ body {
 }
 
 .title:hover {
-    opacity: 0.5;
+    color: red;
 }
 
 a {
@@ -44,11 +44,20 @@ main {
     position: fixed;
     bottom: 5%;
     right: 5%;
-    font-size: 4rem
+    font-size: 4rem;
+    color: red;
+}
+
+.next:hover {
+    opacity: 0.5;
 }
 
 .secret span {
     visibility: hidden;
+}
+
+.secret {
+    color: red;
 }
 
 .secret:hover span {

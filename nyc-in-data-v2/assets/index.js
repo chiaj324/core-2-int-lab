@@ -1,4 +1,5 @@
 let container = document.getElementById("data")
+let incident = {}
 
 let plusbutton = document.querySelector('.plus');
 let timer =  document.querySelector('.mins');
@@ -42,8 +43,59 @@ minusbutton.addEventListener ('click', function(){
     });
 })
 
-function displayData( data ){
-    data.forEach( function(item, index){
+// Do something with the data!
+function parseData(data){
+	// Go through each item in the object
+	// Setup unique list of violations
+	console.log(data);
+	incident = {} // reset violations object
+	data.forEach(record => {
+		if ( record.incident_type_desc ){
+			//take a log of unique violations
+			if( record.code in incident){
+				//code is already registered
+				incident[ record.code ].count ++;
+			}else{
+				//a new violation
+				if ( record.code ){
+					incident[ record.code ] = {
+						description: record.incident_type_desc,
+						count: 1,
+					}
+				}				
+			}
+		}else{
+			//no violations
+		}
+		
+	});
+
+	return incident;
+}
+
+function displayData( incident, data ){
+    console.log(incident);
+
+    const categories = document.getElementById('categories');
+    let html = '';
+
+    let arr = Object.keys(incident).map( code =>{
+        return incident[code].count;
+    });
+    let max = Math.max(...arr);
+    console.log(max);
+
+    let newItem = document.createElement("div");
+    newItem.classList.add('row');
+    for(const code in incident){
+        let item = incident[code];
+        let ratio = item.count/max
+		html+=`<div class="incident">${item.description}(${item.count})</div>`
+	};
+
+	categories.innerHTML = html;}
+
+    {data.forEach( function(item, index){
         let time = getMinute(item);
         // console.log(item, index, time);
         let newItem = document.createElement("div");
@@ -62,7 +114,30 @@ function displayData( data ){
     });
 }
 
-const result = container.group(({ incident_type_desc }) => incident_type_desc);
+// function displayData( data ){
+//     data.forEach( function(item, index){
+//         let time = getMinute(item);
+//         // console.log(item, index, time);
+//         let newItem = document.createElement("div");
+//         newItem.classList.add('row');
+//         newItem.classList.add(`time${time}`);
+//         newItem.innerHTML = `
+//           <div class = "piece">  ${item.incident_type_desc} </div>
+//           <div class = "piece">   ${item.incident_date_time} </div>
+//           <div class = "piece">   ${item.arrival_date_time} </div>
+//           <div class = "piece">   ${item.action_taken1_desc} </div>
+//           <div class = "piece">   ${item.zip_code} </div>
+//           <div class = "piece">   ${item.borough_desc} </div> 
+//         `;
+
+//         container.appendChild(newItem);
+//     });
+// }
+
+
+
+
+
 
 // let categories = document.getElementById("categories")
 

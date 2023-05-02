@@ -43,26 +43,6 @@ minusbutton.addEventListener ('click', function(){
     });
 })
 
-// function displayData( data ){
-//     data.forEach( function(item, index){
-//         let time = getMinute(item);
-//         // console.log(item, index, time);
-//         let newItem = document.createElement("div");
-//         newItem.classList.add('row');
-//         newItem.classList.add(`time${time}`);
-//         newItem.innerHTML = `
-//           <div class = "piece">  ${item.incident_type_desc} </div>
-//           <div class = "piece">   ${item.incident_date_time} </div>
-//           <div class = "piece">   ${item.arrival_date_time} </div>
-//           <div class = "piece">   ${item.action_taken1_desc} </div>
-//           <div class = "piece">   ${item.zip_code} </div>
-//           <div class = "piece">   ${item.borough_desc} </div> 
-//         `;
-
-//         container.appendChild(newItem);
-//     });
-// }
-
 // Do something with the data!
 function parseData(data){
 	// Go through each item in the object
@@ -93,28 +73,70 @@ function parseData(data){
 	return incident;
 }
 
-function displayData(incident){
-	console.log(incident);
+function displayData( data, incident ){
+    console.log(incident)
 
-	const container = document.getElementById('data');
-	let html = '';
-	
-	//get max count of all violations
-	let arr = Object.keys(incident).map( code =>{
-		return incident[code].count;
-	});
-	let max = Math.max(...arr);
-	console.log(max);
+    const categories = document.getElementById('categories');
+    let html = '';
 
-	for(const code in incident ){
-		let item = incident[code]; // get violation object
-		//get ratio for comparison
-		let ratio = item.count/max //divide by the largest number to get a percentage
-		html+=`<div class="incident" style="--ratio:${ratio}">${item.description}(${item.count})</div>`
+    let arr = Object.keys(incident).map( code =>{
+        return incident[code].count;
+    });
+    let max = Math.max(...arr);
+    console.log(max);
+
+    let newItem = document.createElement("div");
+    newItem.classList.add('row');
+    newItem.classList.add(`time${time}`)
+    for(const code in incident){
+        let item = incident[code];
+        let ratio = item.count/max
+		html+=`<div class="incident">${item.description}(${item.count})</div>`
 	};
 
-    container.innerHTML = html;
+	categories.innerHTML = html;}
+
+    {console.log(data);
+    data.forEach ( function(item, index){
+        let time = getMinute(item);
+        // console.log(item, index, time);
+        let newItem = document.createElement("div");
+        newItem.classList.add('row');
+        newItem.classList.add(`time${time}`);
+        newItem.innerHTML = `
+          <div class = "piece">  ${item.incident_type_desc} </div>
+          <div class = "piece">   ${item.incident_date_time} </div>
+          <div class = "piece">   ${item.arrival_date_time} </div>
+          <div class = "piece">   ${item.action_taken1_desc} </div>
+          <div class = "piece">   ${item.zip_code} </div>
+          <div class = "piece">   ${item.borough_desc} </div> 
+        `;
+
+        container.appendChild(newItem);
+    });
 }
+
+// function displayData( data ){
+//     data.forEach( function(item, index){
+//         let time = getMinute(item);
+//         // console.log(item, index, time);
+//         let newItem = document.createElement("div");
+//         newItem.classList.add('row');
+//         newItem.classList.add(`time${time}`);
+//         newItem.innerHTML = `
+//           <div class = "piece">  ${item.incident_type_desc} </div>
+//           <div class = "piece">   ${item.incident_date_time} </div>
+//           <div class = "piece">   ${item.arrival_date_time} </div>
+//           <div class = "piece">   ${item.action_taken1_desc} </div>
+//           <div class = "piece">   ${item.zip_code} </div>
+//           <div class = "piece">   ${item.borough_desc} </div> 
+//         `;
+
+//         container.appendChild(newItem);
+//     });
+// }
+
+
 
 
 

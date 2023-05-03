@@ -1,47 +1,7 @@
 const url = 'https://data.cityofnewyork.us/resource/tm6d-hbzd.json'
 
-let container = document.getElementById("data")
-let incidents = {}
-
-let plusbutton = document.querySelector('.plus');
-let timer =  document.querySelector('.mins');
-let counter = 1;
-plusbutton.addEventListener ('click', function(){
-    //make timer go up
-    // time = time+1;
-    counter++;
-    timer.innerHTML = counter;
-    console.log(counter);
-
-    //remove showed items
-    let shown = document.querySelectorAll('.show');
-    shown.forEach( hide=>{
-        hide.classList.remove('show');
-    });
-
-
-    let rows = document.querySelectorAll('.time'+counter);
-    rows.forEach( row=>{
-        row.classList.add('show');
-    });
-});
-
-let minusbutton = document.querySelector('.minus');
-minusbutton.addEventListener ('click', function(){
-    counter--;
-    timer.innerHTML = counter;
-    console.log(counter);
-    let shown = document.querySelectorAll('.show');
-    shown.forEach( hide=>{
-        hide.classList.remove('show');
-    });
-
-
-    let rows = document.querySelectorAll('.time'+counter);
-    rows.forEach( row=>{
-        row.classList.add('show');
-    });
-})
+let localData = []
+let incidents= {}
 
 function parseData(data){
 	// Go through each item in the object
@@ -85,22 +45,38 @@ function parseData(data){
 }
 
 function displayData( sortedData){
-	console.log( sortedData ) 
+	console.log( sortedData )
 
-	const container = document.getElementById('categories');
+	const container = document.getElementById('records');
 	let html = '';
+	
+	// //get max count of all violations
+	// let arr = Object.keys(incident).map( code =>{
+	// 	return incident[code].count;
+	// });
+	// let max = Math.max(...arr);
+	// console.log(max);
 
-	for(const incidents in sortedData ){
-		let count = 0
-        console.log(incidents)
-        if (sortedData[incidents] == true)
-            count++ // get incident
-        console.log(count)
-		html+=`<div class="incident">${incidents}(${count})</div>`
+	for(const incident_type in sortedData ){
+		let count = sortedData[incident_type]; // get incident
+		//get ratio for comparison
+		// let ratio = item.count/max //divide by the largest number to get a percentage
+		html+=`<div class="record"">${incident_type}(${count})</div>`
 	};
 
     container.innerHTML = html;
 }
+
+fetch(url+'?$limit=500&$$app_token=FtOOF1hdCIX9oqu7LDLZtwCcK')
+	.then(response => response.json())
+	.then(data => {
+		localData = data // Save the data to our local variable, so we don’t have to re-request
+		let sortedData =  parseData(localData);
+        console.log(sortedData);
+        displayData( sortedData )
+		// setupFilters()
+	});
+
 
 
 function getMinute(item){
@@ -126,29 +102,3 @@ function getMinute(item){
     }
     return time;
 }
-
-function setupFilters(){
-	let options = time;
-	options.forEach( option=>{
-		option.addEventListener('click', function(){
-			let time = option.innerText;
-			// console.log(borough);
-			if( time == 0){
-				displayData( parseData(localData) );
-			}else{
-				filterData( time );
-			}
-			
-		});
-	})
-}
-
-fetch(url+'?$limit=500&$$app_token=FtOOF1hdCIX9oqu7LDLZtwCcK')
-	.then(response => response.json())
-	.then(data => {
-		localData = data // Save the data to our local variable, so we don’t have to re-request
-		let sortedData =  parseData(localData);
-        console.log(sortedData);
-        displayData( sortedData )
-		// setupFilters()
-	});

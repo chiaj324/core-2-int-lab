@@ -78,6 +78,8 @@ function filterData( borough ){
 	displayData( parseData(filtered) );
 }
 
+
+
 // Go get the data!
 fetch(url+'?$limit=50000&$$app_token=zrG9tvjwzhg2m1OrlcFb5z0cl')
 	.then(response => response.json())

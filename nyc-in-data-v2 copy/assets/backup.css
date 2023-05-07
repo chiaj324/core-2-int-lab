@@ -1,11 +1,11 @@
 body {
     color: #B03737;
     font-family: "indivisible", sans-serif;
-    /* position: absolute; */
+    position: absolute;
     border-right: 1px solid #B03737;
     border-left: 1px solid #B03737;
-    /* top: 0;
-    bottom: 0; */
+    top: 0;
+    bottom: 0;
 }
 
 
@@ -117,10 +117,6 @@ body {
     width: 100px; */ 
 }
 
-.minus:hover {
-    cursor: pointer;
-}
-
 .plus {
     margin: 0;
     /* text-align: center;
@@ -130,10 +126,6 @@ body {
     width: 100px; */
 }
 
-.plus:hover {
-    cursor: pointer;
-}
-
 .hl1 {
     height: 1px;
     background-color: #B03737;
@@ -141,36 +133,22 @@ body {
 }
 
 
-/* #data {
+#data {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0 auto;
     width: 80%;
-} */
+}
 
-/* #data {
-    display: grid;
-    grid-template-columns: repeat(5, max-content);
-} */
-
-/* .row {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-} */
+.row {
+    display: flex;
+    flex-direction: row;
+}
 
 .piece {
-    font-weight: 600;
-    font-style: normal;
-    background-color: #B03737;
-    color: white;
-    /* border-radius: 10%; */
-    padding: 0.5%; 
-    min-width:50px; 
-    min-height:40px; 
-    max-width: 1400px;
-    max-height: 1120px;
-    /* font-size: 14px; */
+    width: 15%;
+    text-align: center;
 }
 
 .row{
@@ -178,16 +156,9 @@ body {
 }
 .show{
     display: flex;
-    flex-wrap: wrap;
 }
 
 #categories {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-
-.row div {
-    margin: 1%;
-}
-
-

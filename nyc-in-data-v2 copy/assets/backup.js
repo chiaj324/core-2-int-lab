@@ -73,7 +73,28 @@ function parseData(data){
 	return incident;
 }
 
-function displayData( data )
+function displayData( data, incident ){
+    console.log(incident)
+
+    const categories = document.getElementById('categories');
+    let html = '';
+
+    let arr = Object.keys(incident).map( code =>{
+        return incident[code].count;
+    });
+    let max = Math.max(...arr);
+    console.log(max);
+
+    let newItem = document.createElement("div");
+    newItem.classList.add('row');
+    newItem.classList.add(`time${time}`)
+    for(const code in incident){
+        let item = incident[code];
+        let ratio = item.count/max
+		html+=`<div class="incident">${item.description}(${item.count})</div>`
+	};
+
+	categories.innerHTML = html;}
 
     {console.log(data);
     data.forEach ( function(item, index){

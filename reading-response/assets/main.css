@@ -9,47 +9,73 @@
 
 body {
     font-family: helvetica, sans-serif;
-    text-align: center;
-    background-color: #F6F6F2;
-    font-size: 38px;
+    background-color: black;
+    color: white;
     line-height: 1.2;
+    padding: 20px;
 }
 
-h1 {
-    letter-spacing: -.4vw;
+section {
+  font-family: area-normal, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 50%;
+  line-height: 1.5;
+  text-align: justify;
 }
+
+
+h1 {
+    text-align: center;
+    font-size: 5vw;
+    letter-spacing: -.4vw;
+    font-family: area-normal, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h2 {
+  padding-bottom: 20px;
+}
+
+h3 {
+  padding-bottom: 10px;
+}
+
+p {
+  padding-bottom: 30px;
+}
+
+.lecture {
+  text-align: right;
+  padding-left: 50%;
+}
+
+
 /* structure */
 .spacer{
   height: 100vh;
   border: 2px solid red;
 }
 
-section{
-  height: 50vh;
-  
-  margin: 50px;
-}
+
 
 a {
   text-decoration: none;
-  color: steelblue;
+  color: red;
   padding-right: 2vw;
   padding-left: 2vw;
-  font-size: 2vw;
 }
 
 nav {
+  padding-top: 1vw;
   padding-bottom: 3vw;
-  letter-spacing: -.2vw;
-  font-size: 38px;
+  letter-spacing: -.1vw;
+  font-size: 1.5vw;
   line-height: 1.2;
+  text-align: center;
 }
 
-p {
-  width: 80%;
-  margin: auto;
-  text-align: left;
-  font-size: 60%;
-}
+
 
 

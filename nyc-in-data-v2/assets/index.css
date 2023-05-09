@@ -51,7 +51,6 @@ body {
     font-size: 4em;
     text-align: center;
     letter-spacing: -0.1em;
-    border-left: 1px solid #B03737;
 }
 
 .clock {
@@ -190,4 +189,31 @@ body {
     margin: 1%;
 }
 
+@media only screen and (max-width: 1000px) {
+	.title {
+		font-size: 3.5em;
+	}
+    .buffer {
+        width: 0.1em;
+    }
+    .window {
+        height: 35px;
+        width: 70px;
+        border: 10px #B03737 solid;
+        border-radius: 15px;
+    }
+    .mins {
+        font-size: 1.6em;
+    }
+    .padding {
+        padding: 1px;
+    }
+    .buttons {
+        font-size: 3em;
+    }
+    .piece {
+        max-width: 400px;
+        max-height: 320px;
+    }
+  }
 
